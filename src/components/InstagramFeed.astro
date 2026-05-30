@@ -59,6 +59,7 @@ const INSTAGRAM_HANDLE = "hululu_garden";
   .feed-grid {
     min-height: 200px;
     margin-bottom: 2rem;
+    width: 100%;
   }
 
   .feed-cta {
@@ -82,5 +83,23 @@ const INSTAGRAM_HANDLE = "hululu_garden";
     transform: translateY(-2px);
     box-shadow: 0 4px 16px rgba(225, 48, 108, 0.35);
     color: #fff;
+  }
+</style>
+
+<style is:global>
+  /* Force Elfsight widget to be centered and full-width within our container */
+  .feed-grid .eapps-instagram-feed {
+    width: 100% !important;
+    max-width: 1100px !important;
+    margin: 0 auto !important;
+  }
+
+  .feed-grid [class*="elfsight-app"] {
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .feed-grid .eapps-instagram-feed-posts {
+    justify-content: center !important;
   }
 </style>
