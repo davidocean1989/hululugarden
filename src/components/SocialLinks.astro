@@ -1,0 +1,110 @@
+---
+
+---
+
+<section id="social" class="social">
+  <div class="container">
+    <h2 class="section-title">Find HULULU GARDEN Online</h2>
+    <p class="social-intro">
+      Scan a QR code or tap a link to see more gourds, new designs,
+      and upcoming market days.
+    </p>
+
+    <div class="social-grid">
+      <div class="social-card">
+        <h3>Etsy Shop</h3>
+        <p>Browse ready-to-ship pieces and seasonal limited editions.</p>
+        <a href="https://hululugarden.etsy.com/" class="social-link" target="_blank" rel="noopener">
+          hululugarden.etsy.com
+        </a>
+        <img
+          src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https%3A%2F%2Fhululugarden.etsy.com"
+          alt="QR code for Etsy shop"
+          class="qr-code"
+          loading="lazy"
+          width="180"
+          height="180"
+        />
+      </div>
+
+      <div class="social-card">
+        <h3>Instagram</h3>
+        <p>See new drops, work-in-progress shots, and our weekend market life.</p>
+        <a href="https://www.instagram.com/hululu_garden" class="social-link" target="_blank" rel="noopener">
+          @hululu_garden
+        </a>
+        <img
+          src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https%3A%2F%2Fwww.instagram.com%2Fhululu_garden"
+          alt="QR code for Instagram"
+          class="qr-code"
+          loading="lazy"
+          width="180"
+          height="180"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .social {
+    padding: 5rem 0;
+    background: var(--color-warm);
+  }
+
+  .section-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    text-align: center;
+    color: var(--color-leaf);
+    margin-bottom: 1rem;
+  }
+
+  .social-intro {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto 3rem;
+    font-size: 0.95rem;
+    color: var(--color-moss);
+  }
+
+  .social-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .social-card {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    background: var(--color-cream);
+    border-radius: 12px;
+  }
+
+  .social-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    color: var(--color-bark);
+    margin-bottom: 0.75rem;
+  }
+
+  .social-card p {
+    font-size: 0.9rem;
+    color: var(--color-moss);
+    margin-bottom: 1rem;
+  }
+
+  .social-link {
+    display: inline-block;
+    color: var(--color-sand);
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+
+  .qr-code {
+    margin: 0 auto;
+    border-radius: 8px;
+  }
+</style>

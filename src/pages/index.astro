@@ -1,0 +1,32 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import Gallery from '../components/Gallery.astro';
+import SocialLinks from '../components/SocialLinks.astro';
+import Contact from '../components/Contact.astro';
+---
+
+<Layout title="HULULU GARDEN — Handcrafted Happiness in Every Gourd">
+  <Hero />
+  <About />
+  <Gallery />
+  <SocialLinks />
+  <Contact />
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; {new Date().getFullYear()} HULULU GARDEN · Handcrafted with love in the Bay Area</p>
+    </div>
+  </footer>
+</Layout>
+
+<style>
+  .site-footer {
+    padding: 2rem 0;
+    text-align: center;
+    background: var(--color-leaf);
+    color: var(--color-cream);
+    font-size: 0.85rem;
+  }
+</style>

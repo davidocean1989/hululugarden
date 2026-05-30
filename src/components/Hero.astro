@@ -1,0 +1,84 @@
+---
+
+---
+
+<section class="hero">
+  <div class="hero-image">
+    <img
+      src="/images/booth-daytime.jpg"
+      alt="HULULU GARDEN booth at weekend market"
+      width="1600"
+      loading="eager"
+      fetchpriority="high"
+    />
+  </div>
+  <div class="hero-overlay">
+    <p class="hero-subtitle">WEEKEND MARKET · BAY AREA</p>
+    <h1 class="hero-title">HULULU GARDEN</h1>
+    <p class="hero-tagline">Handcrafted Happiness in Every Gourd</p>
+  </div>
+</section>
+
+<style>
+  .hero {
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .hero-image {
+    position: absolute;
+    inset: 0;
+  }
+
+  .hero-image :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero-overlay {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 2rem;
+    background: rgba(254, 250, 224, 0.85);
+    border-radius: 12px;
+    max-width: 600px;
+  }
+
+  .hero-subtitle {
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    letter-spacing: 0.25em;
+    color: var(--color-sand);
+    margin-bottom: 0.75rem;
+  }
+
+  .hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    color: var(--color-leaf);
+    margin-bottom: 0.75rem;
+  }
+
+  .hero-tagline {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--color-bark);
+  }
+
+  @media (max-width: 600px) {
+    .hero {
+      min-height: 60vh;
+    }
+    .hero-overlay {
+      margin: 1rem;
+    }
+  }
+</style>
